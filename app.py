@@ -28,4 +28,4 @@ def solve():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)    #set to false when you want to debug lol
+    app.run(debug=False)    #fale to debug python code, True to debug front end
