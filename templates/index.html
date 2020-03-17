@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<title>
+    Rubiks Solver
+</title>
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="content">
+
+    <h2>Rubiks Solver</h2>
+
+    <table id="maintable">
+    <tr>
+        <th>Input</th>
+        <th>Solution</th>
+    </tr>
+    <tr>
+        <td>
+            <canvas id="canv" width="500px" height="500px"></canvas>
+            <br>
+            <button id="solveBtn">Solve</button>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <button id="prevBtn">Prev</button>
+                    </td>
+                    <td>
+                        <button id="nextBtn">Next</button>
+                    </td>
+                </tr>
+            </table>
+
+            <canvas id="solCanvas" style="border: 1px solid black;" width="700px" height="400px"></canvas>
+
+        </td>
+    </tr>
+    </table>
+
+    <!-- Pictures  -->
+    <div style="display: none;">
+        <img id="b" src="{{url_for('static', filename='images/b.png')}}">
+        <img id="bp" src="{{url_for('static', filename='images/bp.png')}}">
+        <img id="b2" src="{{url_for('static', filename='images/b2.png')}}">
+
+        <img id="g" src="{{url_for('static', filename='images/g.png')}}">
+        <img id="gp" src="{{url_for('static', filename='images/gp.png')}}">
+        <img id="g2" src="{{url_for('static', filename='images/g2.png')}}">
+
+        <img id="o" src="{{url_for('static', filename='images/o.png')}}">
+        <img id="op" src="{{url_for('static', filename='images/op.png')}}">
+        <img id="o2" src="{{url_for('static', filename='images/o2.png')}}">
+
+        <img id="r" src="{{url_for('static', filename='images/r.png')}}">
+        <img id="rp" src="{{url_for('static', filename='images/rp.png')}}">
+        <img id="r2" src="{{url_for('static', filename='images/r2.png')}}">
+
+        <img id="w" src="{{url_for('static', filename='images/w.png')}}">
+        <img id="wp" src="{{url_for('static', filename='images/wp.png')}}">
+        <img id="w2" src="{{url_for('static', filename='images/w2.png')}}">
+        
+        <img id="y" src="{{url_for('static', filename='images/y.png')}}">
+        <img id="yp" src="{{url_for('static', filename='images/yp.png')}}">
+        <img id="y2" src="{{url_for('static', filename='images/y2.png')}}">
+    </div>
+
+    <script src="{{url_for('static', filename='three.js')}}"></script>
+    <script src="{{url_for('static', filename='cubeAnimation.js')}}"></script>
+    <script src="{{url_for('static', filename='drawSolution.js')}}"></script>
+
+</div>
+
+
+
+
+{% endblock %}
