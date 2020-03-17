@@ -2,6 +2,7 @@
 
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <title>
     Rubiks Solver
 </title>
@@ -22,7 +23,7 @@
     </tr>
     <tr>
         <td>
-            <canvas id="canv" width="500px" height="500px"></canvas>
+            <canvas id="canv" width="460px" height="460px"></canvas>
             <br>
             <button id="solveBtn">Solve</button>
         </td>
@@ -74,6 +75,11 @@
     <script src="{{url_for('static', filename='three.js')}}"></script>
     <script src="{{url_for('static', filename='cubeAnimation.js')}}"></script>
     <script src="{{url_for('static', filename='drawSolution.js')}}"></script>
+
+
+    <footer>
+        <a href="https://github.com/sebas8sebas/RubiksCubeSolvingWebApp" target="_blank">Source code</a>
+    </footer>
 
 </div>
 
