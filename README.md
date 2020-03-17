@@ -1,4 +1,4 @@
-This project consists on a flask application to solve the Rubik's cube using the beginner's method.
+This project consists on a Flask application to solve the Rubik's cube using the beginner's method.
 
 I used the JavaScript library <a href="https://threejs.org/">Three.js</a> to create 
 a 3d animation of the Rubik's cube where the user can enter the state of the cube. 
