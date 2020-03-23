@@ -7,5 +7,5 @@ When the user clicks on the 'solve' button, the input will be sent to the python
 input is valid) will compute the solution using the beginner's method, and then, the computed solution 
 will be displayed. 
 
-Current Limitations:
+Current limitations:
 - Currently, the only cube solving algorithm I have implemented is the beginner's method which takes a lot of moves to solve the cube. I will potentially implement more powerful, algorithms in the future.
